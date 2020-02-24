@@ -59,12 +59,30 @@ i{
     font-size: 5em;
  }
 
-.anclas > i{
+ i:hover{
+    font-size: 4.5em;
+    color: darkgreen;
+ }
+
+ .anclas > i{
     text-align: center;
     justify-content: center;
     height: 150px;
     font-size: 1em;
     color: rgb(0, 0, 0);
+    z-index: 5;
+    
+}
+.texto-portfolio{
+    font-size: 3em;
+}
+
+.anclas > i:hover{
+    text-align: center;
+    justify-content: center;
+    height: 150px;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.5);
     z-index: 5;
     
 }
@@ -78,14 +96,13 @@ i{
     position: absolute;
 }
 
-.slider:hover{
+.slider:hover {
     z-index: -1;
-    top: -200vh;
-    
+    top: -100vh;
 }
 
 p{
-
+    font-size: 1.5em;
 }
 
 
@@ -200,4 +217,56 @@ opacity: 0.5;
 
 .grid_logros > div{
     padding: 5vh;
+}
+.grid_estudios{
+    display: grid;
+    grid-template-rows: 1fr;
+    padding: 5vh;
+}
+.grid_web{
+    display: grid;
+    grid-template-rows: 50vh 1fr 2fr;
+    background-color: red;
+}
+.grid_web > .cajas{
+
+    height: 10vh;
+}
+
+.grid_estudios:nth-child(odd){
+    background-color: tomato;
+
+}
+.cajas{
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    display: flexbox;
+
+}
+.cajas:nth-child(even){
+    margin-top: 2vh;
+    padding: 50px;
+    background-color: rgba(135, 222, 167, 0.479);
+}
+
+.cajas > p{
+    font-size: 1.25em;
+    color: white;
+}
+
+.cajas:nth-child(even) > p:nth-child(4n+1){
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+}
+
+.wrapper{
+    width: 90vw;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sobremi{
+    padding: 200px;
 }
