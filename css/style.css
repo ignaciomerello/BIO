@@ -83,19 +83,28 @@ aside{
     
 }
 
-.slider{
+
+
+/* aside > a{
+    
+} */
+
+/* .slider{
     height: 5em;
     width: 5em;
     background-color: beige;
     bottom: 0;
     left: 0;
     position: absolute;
+    top: 0vh;
+    z-index: -1;
 }
 
 .slider:hover {
-    z-index: -1;
-    top: -100vh;
-}
+    z-index: 0;
+    top: 100vh;
+    transition: 0.1s ease-in-out 1;
+} */
 
 
 footer{
@@ -123,13 +132,23 @@ a{
 
 a:hover{
     font-size: 2em;
+}
 
+
+.foto_perfil{
+    border: solid 10px beige;
+    border-radius: 300px;
+    overflow: hidden;
+}
+img{
+    width: 30vh;
+    margin: -2vh;
 }
 
 
 /*Estilos About me*/
 .sobremi{
-    padding: 200px;
+    padding: 15vw;
 }
 
 /*Estilos contact form*/
